@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css.css">
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./tailwind.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bgc: '#111',
+                primary: '#8080D7',
+                sec: '#AAD9D9',
+                nav: '#12165A',
+                black: '#161A30'
+              }
+            },
+            screen: {
+              'xs': '400px'
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-bgc text-white">
+
+  <nav class="h-16 bg-indigo-950 fixed right-0 left-0 top-0 z-50">
+    <div class="container h-full flex items-center justify-between">
+      <h1 class="text-2xl">GSB</h1>
+      
+      <ul class="nav-items flex gap-3 items-center absolute md:static right-0 z-40 flex-col md:flex-row bg-bgc md:bg-transparent top-16 w-96 h-60 justify-center">
+        <li>
+          <a class="font-light" href="#">Sell Beats</a>
+        </li>
+        <li>
+          <a class="font-light" href="#">All Beats</a>
+        </li>
+        <li>
+          <a class="font-light" href="#">SignUp</a>
+        </li>
+        <li>
+          <a class="text-2xl" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+        </li>
+        <li>
+          <a class="bg-black p-2 px-5 rounded-full" class="font-light" href="#">Login</a>
+        </li>
+      </ul>
+      <div class="flex gap-4 xl:hidden">
+        <p class="text-3xl md:hidden cursor-pointer" id="nav-menu"><ion-icon name="chevron-down-outline"></ion-icon></p>
+        <p class="text-3xl  cursor-pointer" id="menu"><ion-icon name="menu-outline"></ion-icon></p>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="my-12 block h-1 w-full"></div>
+
+  <!-- <div class="mb-16"></div> -->
+
+    <main class="container">
+
+    <!-- Search -->
+    <div class="flex bg-black h-14 rounded-lg my-10 px-2 sm:px-5 items-center">
+      <p class="pr-4 mr-5 border-r hidden min-[500px]:inline">Keyword <span class="hidden sm:inline">Search</span></p>
+      <input class="bg-transparent grow py-2" type="text" name="" id="" placeholder="Search producer, playlist or gener">
+      <button class="py-2 px-7 rounded-full bg-bgc">Search</button>
+    </div>
+    <!-- Search //-->
+
+    <!-- Hero Section -->
+    <div class="hero grid grid-cols-3 gap-5">
+      <!-- Slider -->
+      <div class="owl-carousel owl-hero-slider col-span-3 xl:col-span-2">
+        <div>
+          <img class="rounded-lg" src="./images/slider1.jpg" alt="">
+        </div>
+        <div>
+          <img class="rounded-lg" src="./images/slider2.jpg" alt="">
+        </div>
+        <div>
+          <img class="rounded-lg" src="./images/slider3.jpg" alt="">
+        </div>
+      </div>
+      <!-- Slider //-->
+      
+      <!-- Top Producer -->
+      <div class="producers bg-black rounded-lg p-4 hidden xl:block">
+        <h2 class="text-2xl font-medium mb-2">Top Producers</h2>
+
+        <div class="items">
+          <div class="flex gap-3 items-center my-3">
+            <span class="text-xl font-medium">1</span>
+            <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+            <h1 class="text-lg">Tone Jonez</h1>
+          </div>
+          
+          <div class="flex gap-3 items-center my-3">
+            <span class="text-xl font-medium">2</span>
+            <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+            <h1 class="text-lg">Tone Jonez</h1>
+          </div>
+          <div class="flex gap-3 items-center my-3">
+            <span class="text-xl font-medium">3</span>
+            <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+            <h1 class="text-lg">Tone Jonez</h1>
+          </div>
+          <div class="flex gap-3 items-center my-3">
+            <span class="text-xl font-medium">4</span>
+            <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+            <h1 class="text-lg">Tone Jonez</h1>
+          </div>
+          <div class="flex gap-3 items-center my-3">
+            <span class="text-xl font-medium">5</span>
+            <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+            <h1 class="text-lg">Tone Jonez</h1>
+          </div>
+          <div class="flex gap-3 items-center my-3">
+            <span class="text-xl font-medium">6</span>
+            <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+            <h1 class="text-lg">Tone Jonez</h1>
+          </div>
+          <div class="flex gap-3 items-center my-3">
+            <span class="text-xl font-medium">7</span>
+            <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+            <h1 class="text-lg">Tone Jonez</h1>
+          </div>
+
+        </div>
+      </div>
+      <!-- Top Producer //-->
+
+    </div>
+    <!-- Hero Section //-->
+
+
+    <!-- Feature Images -->
+    <div class="my-12">
+      <h1 class="text-center text-4xl py-5">Whatever Title You Want</h1>
+
+      <div class="owl-img owl-carousel flex gap-5 justify-center items-center my-5 w-4/5 mx-auto">
+        <div class="item bg-slate-400 rounded-lg w-36 h-80">
+          <img class="h-full w-full object-cover rounded-lg" src="./images/profile/pexels-snapwire-412840.jpg" alt="">
+          <img class="absolute z-30 bottom-0 rounded-lg h-full" src="./images/shadow.png" alt="">
+          <h3 class="z-40 absolute bottom-2 left-2 text-lg font-medium">John Doe</h3>
+        </div>
+        <div class="item bg-slate-400 rounded-lg w-36 h-56">
+          <img class="h-full w-full object-cover rounded-lg" src="./images/profile/face-4.jpg" alt="">
+          <img class="absolute z-40 bottom-0 rounded-lg h-full" src="./images/shadow.png" alt="">
+          <h3 class="z-40 absolute bottom-2 left-2 text-lg font-medium">Someone</h3>
+        </div>
+        <div class="item bg-slate-400 rounded-lg w-36 h-64">
+          <img class="h-full w-full object-cover rounded-lg" src="./images/profile/face-3.jpg" alt="">
+          <img class="absolute z-40 bottom-0 rounded-lg h-full" src="./images/shadow.png" alt="">
+          <h3 class="z-40 absolute bottom-2 left-2 text-lg font-medium">Yung Nab</h3>
+        </div>
+        <div class="item bg-slate-400 rounded-lg w-36 h-52">
+          <img class="h-full w-full object-cover rounded-lg" src="./images/profile/face-1.jpg" alt="">
+          <img class="absolute z-40 bottom-0 rounded-lg h-full" src="./images/shadow.png" alt="">
+          <h3 class="z-40 absolute bottom-2 left-2 text-lg font-medium">Tone Jonez</h3>
+        </div>
+        <div class="item bg-slate-400 rounded-lg w-36 h-72">
+          <img class="h-full w-full object-cover rounded-lg" src="./images/profile/istockphoto-1340898759-1024x1024.jpg" alt="">
+          <img class="absolute z-40 bottom-0 rounded-lg h-full" src="./images/shadow.png" alt="">
+          <h3 class="z-40 absolute bottom-2 left-2 text-lg font-medium">ThatKidGor</h3>
+        </div>
+        <div class="item bg-slate-400 rounded-lg w-36 h-64">
+          <img class="h-full w-full object-cover rounded-lg" src="./images/profile/istockphoto-1326852416-1024x1024.jpg" alt="">
+          <img class="absolute z-40 bottom-0 rounded-lg h-full" src="./images/shadow.png" alt="">
+          <h3 class="z-40 absolute bottom-2 left-2 text-lg font-medium">Yung Nab</h3>
+        </div>
+        <div class="item bg-slate-400 rounded-lg w-36 h-60">
+          <img class="h-full w-full object-cover rounded-lg" src="./images/profile/pngwing.com (20).png" alt="">
+          <img class="absolute z-40 bottom-0 rounded-lg h-full" src="./images/shadow.png" alt="">
+          <h3 class="z-40 absolute bottom-2 left-2 text-lg font-medium">Tony JOnez</h3>
+        </div>
+      </div>
+    </div>
+    <!-- Feature Images //-->
+
+
+    <div class="content grid grid-cols-3 gap-4">
+      <!-- Main Section -->
+      <div class="main col-span-3 xl:col-span-2">
+<!-- zzz -->
+        <!-- Featured Musics -->
+        <div class="bg-black p-4 px-5 my-4 rounded-xl">
+          <h1 class="text-2xl font-semibold py-1">Featured Musics</h1>
+          <div class="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-3 my-3 gap-3">
+          <!-- <div class="flex flex-wrap my-3 gap-3"> -->
+
+            <!-- Music Card -->
+            <div class="card bg-bgc py-7 px-8 rounded-xl relative hover:shadow-md hover:shadow-indigo-900 transition">
+              <span class="text-2xl absolute right-2 top-2 text-sec"><ion-icon name="heart-outline"></ion-icon></span>
+              <!-- <span class="text-2xl absolute right-2 top-2 text-sec"><ion-icon name="heart"></ion-icon></span> -->
+
+              <div class="flex gap-3 absolute -left-8 top-24 -rotate-90">
+                <div class="flex gap-1">
+                  <span class="text-lg"><ion-icon name="headset-outline"></ion-icon></span>
+                  <span class="text-md font-sm">30</span>
+                </div>
+                <div class="flex gap-1">
+                  <span class="text-xl h-full"><ion-icon name="heart-outline"></ion-icon></span>
+                  <span class="text-md font-sm">30</span>
+                </div>
+              </div>
+
+              <div class="group img bg-slate-300 rounded-lg w-full h-32 relative">
+                <img class="h-full w-full object-cover rounded-lg" src="./images/thumb1.jpg" alt="">
+                <div class="z-40 h-10 w-10 border-2 border-slate-600 rounded-full flex bg-slate-300 items-center justify-center absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-pointer">
+                  <span class="text-2xl mt-1.5 ml-0.5 text-slate-600"><ion-icon name="play"></ion-icon></span>
+                </div>
+
+                <div class="bg-slate-600 absolute w-full bottom-0 rounded-b-md hidden group-hover:flex items-center justify-between px-5">
+                  <span class="pt-1 cursor-pointer"><ion-icon name="play-outline"></ion-icon></span>
+                  <span class="pt-1 cursor-pointer"><ion-icon name="add-circle-outline"></ion-icon></span>
+                  <span class="pt-1 cursor-pointer"><ion-icon name="cart-outline"></ion-icon></span>
+                </div>
+              </div>
+              <h1 class="text-xl font-medium leading-6 mt-2 pb-0">Piano Vibes Inspired By John Doe</h1>
+            </div>
+            <!-- Music Card //-->
+            <!-- Music Card -->
+            <div class="card bg-bgc py-7 px-8 rounded-xl relative hover:shadow-md hover:shadow-indigo-900 transition">
+              <span class="text-2xl absolute right-2 top-2 text-sec"><ion-icon name="heart-outline"></ion-icon></span>
+              <!-- <span class="text-2xl absolute right-2 top-2 text-sec"><ion-icon name="heart"></ion-icon></span> -->
+
+              <div class="flex gap-3 absolute -left-8 top-24 -rotate-90">
+                <div class="flex gap-1">
+                  <span class="text-lg"><ion-icon name="headset-outline"></ion-icon></span>
+                  <span class="text-md font-sm">30</span>
+                </div>
+                <div class="flex gap-1">
+                  <span class="text-xl h-full"><ion-icon name="heart-outline"></ion-icon></span>
+                  <span class="text-md font-sm">30</span>
+                </div>
+              </div>
+
+              <div class="group img bg-slate-300 rounded-lg w-full h-32 relative">
+                <img class="h-full w-full object-cover rounded-lg" src="./images/thumb1.jpg" alt="">
+                <div class="z-40 h-10 w-10 border-2 border-slate-600 rounded-full flex bg-slate-300 items-center justify-center absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-pointer">
+                  <span class="text-2xl mt-1.5 ml-0.5 text-slate-600"><ion-icon name="play"></ion-icon></span>
+                </div>
+
+                <div class="bg-slate-600 absolute w-full bottom-0 rounded-b-md hidden group-hover:flex items-center justify-between px-5">
+                  <span class="pt-1 cursor-pointer"><ion-icon name="play-outline"></ion-icon></span>
+                  <span class="pt-1 cursor-pointer"><ion-icon name="add-circle-outline"></ion-icon></span>
+                  <span class="pt-1 cursor-pointer"><ion-icon name="cart-outline"></ion-icon></span>
+                </div>
+              </div>
+              <h1 class="text-xl font-medium leading-6 mt-2 pb-0">Piano Vibes Inspired By John Doe</h1>
+            </div>
+            <!-- Music Card //-->
+            <!-- Music Card -->
+            <div class="card bg-bgc py-7 px-8 rounded-xl relative hover:shadow-md hover:shadow-indigo-900 transition">
+              <span class="text-2xl absolute right-2 top-2 text-sec"><ion-icon name="heart-outline"></ion-icon></span>
+              <!-- <span class="text-2xl absolute right-2 top-2 text-sec"><ion-icon name="heart"></ion-icon></span> -->
+
+              <div class="flex gap-3 absolute -left-8 top-24 -rotate-90">
+                <div class="flex gap-1">
+                  <span class="text-lg"><ion-icon name="headset-outline"></ion-icon></span>
+                  <span class="text-md font-sm">30</span>
+                </div>
+                <div class="flex gap-1">
+                  <span class="text-xl h-full"><ion-icon name="heart-outline"></ion-icon></span>
+                  <span class="text-md font-sm">30</span>
+                </div>
+              </div>
+
+              <div class="group img bg-slate-300 rounded-lg w-full h-32 relative">
+                <img class="h-full w-full object-cover rounded-lg" src="./images/thumb1.jpg" alt="">
+                <div class="z-40 h-10 w-10 border-2 border-slate-600 rounded-full flex bg-slate-300 items-center justify-center absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-pointer">
+                  <span class="text-2xl mt-1.5 ml-0.5 text-slate-600"><ion-icon name="play"></ion-icon></span>
+                </div>
+
+                <div class="bg-slate-600 absolute w-full bottom-0 rounded-b-md hidden group-hover:flex items-center justify-between px-5">
+                  <span class="pt-1 cursor-pointer"><ion-icon name="play-outline"></ion-icon></span>
+                  <span class="pt-1 cursor-pointer"><ion-icon name="add-circle-outline"></ion-icon></span>
+                  <span class="pt-1 cursor-pointer"><ion-icon name="cart-outline"></ion-icon></span>
+                </div>
+              </div>
+              <h1 class="text-xl font-medium leading-6 mt-2 pb-0">Piano Vibes Inspired By John Doe</h1>
+            </div>
+            <!-- Music Card //-->
+            <!-- Music Card -->
+            <div class="card bg-bgc py-7 px-8 rounded-xl relative hover:shadow-md hover:shadow-indigo-900 transition">
+              <span class="text-2xl absolute right-2 top-2 text-sec"><ion-icon name="heart-outline"></ion-icon></span>
+              <!-- <span class="text-2xl absolute right-2 top-2 text-sec"><ion-icon name="heart"></ion-icon></span> -->
+
+              <div class="flex gap-3 absolute -left-8 top-24 -rotate-90">
+                <div class="flex gap-1">
+                  <span class="text-lg"><ion-icon name="headset-outline"></ion-icon></span>
+                  <span class="text-md font-sm">30</span>
+                </div>
+                <div class="flex gap-1">
+                  <span class="text-xl h-full"><ion-icon name="heart-outline"></ion-icon></span>
+                  <span class="text-md font-sm">30</span>
+                </div>
+              </div>
+
+              <div class="group img bg-slate-300 rounded-lg w-full h-32 relative">
+                <img class="h-full w-full object-cover rounded-lg" src="./images/thumb1.jpg" alt="">
+                <div class="z-40 h-10 w-10 border-2 border-slate-600 rounded-full flex bg-slate-300 items-center justify-center absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-pointer">
+                  <span class="text-2xl mt-1.5 ml-0.5 text-slate-600"><ion-icon name="play"></ion-icon></span>
+                </div>
+
+                <div class="bg-slate-600 absolute w-full bottom-0 rounded-b-md hidden group-hover:flex items-center justify-between px-5">
+                  <span class="pt-1 cursor-pointer"><ion-icon name="play-outline"></ion-icon></span>
+                  <span class="pt-1 cursor-pointer"><ion-icon name="add-circle-outline"></ion-icon></span>
+                  <span class="pt-1 cursor-pointer"><ion-icon name="cart-outline"></ion-icon></span>
+                </div>
+              </div>
+              <h1 class="text-xl font-medium leading-6 mt-2 pb-0">Piano Vibes Inspired By John Doe</h1>
+            </div>
+            <!-- Music Card //-->
+            <!-- Music Card -->
+            <div class="card bg-bgc py-7 px-8 rounded-xl relative hover:shadow-md hover:shadow-indigo-900 transition">
+              <span class="text-2xl absolute right-2 top-2 text-sec"><ion-icon name="heart-outline"></ion-icon></span>
+              <!-- <span class="text-2xl absolute right-2 top-2 text-sec"><ion-icon name="heart"></ion-icon></span> -->
+
+              <div class="flex gap-3 absolute -left-8 top-24 -rotate-90">
+                <div class="flex gap-1">
+                  <span class="text-lg"><ion-icon name="headset-outline"></ion-icon></span>
+                  <span class="text-md font-sm">30</span>
+                </div>
+                <div class="flex gap-1">
+                  <span class="text-xl h-full"><ion-icon name="heart-outline"></ion-icon></span>
+                  <span class="text-md font-sm">30</span>
+                </div>
+              </div>
+
+              <div class="group img bg-slate-300 rounded-lg w-full h-32 relative">
+                <img class="h-full w-full object-cover rounded-lg" src="./images/thumb1.jpg" alt="">
+                <div class="z-40 h-10 w-10 border-2 border-slate-600 rounded-full flex bg-slate-300 items-center justify-center absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-pointer">
+                  <span class="text-2xl mt-1.5 ml-0.5 text-slate-600"><ion-icon name="play"></ion-icon></span>
+                </div>
+
+                <div class="bg-slate-600 absolute w-full bottom-0 rounded-b-md hidden group-hover:flex items-center justify-between px-5">
+                  <span class="pt-1 cursor-pointer"><ion-icon name="play-outline"></ion-icon></span>
+                  <span class="pt-1 cursor-pointer"><ion-icon name="add-circle-outline"></ion-icon></span>
+                  <span class="pt-1 cursor-pointer"><ion-icon name="cart-outline"></ion-icon></span>
+                </div>
+              </div>
+              <h1 class="text-xl font-medium leading-6 mt-2 pb-0">Piano Vibes Inspired By John Doe</h1>
+            </div>
+            <!-- Music Card //-->
+            <!-- Music Card -->
+            <div class="card bg-bgc py-7 px-8 rounded-xl relative hover:shadow-md hover:shadow-indigo-900 transition">
+              <span class="text-2xl absolute right-2 top-2 text-sec"><ion-icon name="heart-outline"></ion-icon></span>
+              <!-- <span class="text-2xl absolute right-2 top-2 text-sec"><ion-icon name="heart"></ion-icon></span> -->
+
+              <div class="flex gap-3 absolute -left-8 top-24 -rotate-90">
+                <div class="flex gap-1">
+                  <span class="text-lg"><ion-icon name="headset-outline"></ion-icon></span>
+                  <span class="text-md font-sm">30</span>
+                </div>
+                <div class="flex gap-1">
+                  <span class="text-xl h-full"><ion-icon name="heart-outline"></ion-icon></span>
+                  <span class="text-md font-sm">30</span>
+                </div>
+              </div>
+
+              <div class="group img bg-slate-300 rounded-lg w-full h-32 relative">
+                <img class="h-full w-full object-cover rounded-lg" src="./images/thumb1.jpg" alt="">
+                <div class="z-40 h-10 w-10 border-2 border-slate-600 rounded-full flex bg-slate-300 items-center justify-center absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-pointer">
+                  <span class="text-2xl mt-1.5 ml-0.5 text-slate-600"><ion-icon name="play"></ion-icon></span>
+                </div>
+
+                <div class="bg-slate-600 absolute w-full bottom-0 rounded-b-md hidden group-hover:flex items-center justify-between px-5">
+                  <span class="pt-1 cursor-pointer"><ion-icon name="play-outline"></ion-icon></span>
+                  <span class="pt-1 cursor-pointer"><ion-icon name="add-circle-outline"></ion-icon></span>
+                  <span class="pt-1 cursor-pointer"><ion-icon name="cart-outline"></ion-icon></span>
+                </div>
+              </div>
+              <h1 class="text-xl font-medium leading-6 mt-2 pb-0">Piano Vibes Inspired By John Doe</h1>
+            </div>
+            <!-- Music Card //-->
+
+          </div>
+        </div>
+        <!-- Featured Musics //-->
+       
+        <!-- Featured Producers -->
+        <div class="bg-black p-4 px-5 my-4 rounded-xl">
+          <h1 class="text-2xl font-semibold py-1">Featured Producers</h1>
+          <div class="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-3 my-3 gap-3">
+
+            <!-- Producer Card -->
+            <div class="card bg-bgc py-7 px-8 rounded-xl relative hover:shadow-md hover:shadow-indigo-900 transition">
+              <div class="flex gap-3 absolute -left-4 top-24 -rotate-90">
+                <p>Total: 30</p>
+              </div>
+
+              <div class="group img bg-slate-300 rounded-lg w-full h-32 relative">
+                <img class="h-full w-full object-cover rounded-lg" src="./images/thumb1.jpg" alt="">
+                <div class="z-40 h-10 w-10 border-2 border-slate-600 rounded-full hidden group-hover:flex bg-slate-300 items-center justify-center absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-pointer">
+                  <span class="text-2xl mt-1.5 ml-0.5 text-slate-600 transition"><ion-icon name="musical-note-outline"></ion-icon></span>
+                </div>
+
+               
+              </div>
+              <h1 class="text-xl font-medium leading-6 mt-2 pb-0">John Doe</h1>
+            </div>
+            <!-- Producer Card //-->
+            <!-- Producer Card -->
+            <div class="card bg-bgc py-7 px-8 rounded-xl relative hover:shadow-md hover:shadow-indigo-900 transition">
+              <div class="flex gap-3 absolute -left-4 top-24 -rotate-90">
+                <p>Total: 26</p>
+              </div>
+
+              <div class="group img bg-slate-300 rounded-lg w-full h-32 relative">
+                <img class="h-full w-full object-cover rounded-lg" src="./images/thumb1.jpg" alt="">
+                <div class="z-40 h-10 w-10 border-2 border-slate-600 rounded-full hidden group-hover:flex bg-slate-300 items-center justify-center absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-pointer">
+                  <span class="text-2xl mt-1.5 ml-0.5 text-slate-600 transition"><ion-icon name="musical-note-outline"></ion-icon></span>
+                </div>
+
+               
+              </div>
+              <h1 class="text-xl font-medium leading-6 mt-2 pb-0">Tone Jonez</h1>
+            </div>
+            <!-- Producer Card //-->
+            <!-- Producer Card -->
+            <div class="card bg-bgc py-7 px-8 rounded-xl relative hover:shadow-md hover:shadow-indigo-900 transition">
+              <div class="flex gap-3 absolute -left-4 top-24 -rotate-90">
+                <p>Total: 76</p>
+              </div>
+
+              <div class="group img bg-slate-300 rounded-lg w-full h-32 relative">
+                <img class="h-full w-full object-cover rounded-lg" src="./images/thumb1.jpg" alt="">
+                <div class="z-40 h-10 w-10 border-2 border-slate-600 rounded-full hidden group-hover:flex bg-slate-300 items-center justify-center absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-pointer">
+                  <span class="text-2xl mt-1.5 ml-0.5 text-slate-600 transition"><ion-icon name="musical-note-outline"></ion-icon></span>
+                </div>
+
+               
+              </div>
+              <h1 class="text-xl font-medium leading-6 mt-2 pb-0">John Doe</h1>
+            </div>
+            <!-- Producer Card //-->
+            <!-- Producer Card -->
+            <div class="card bg-bgc py-7 px-8 rounded-xl relative hover:shadow-md hover:shadow-indigo-900 transition">
+              <div class="flex gap-3 absolute -left-4 top-24 -rotate-90">
+                <p>Total: 30</p>
+              </div>
+
+              <div class="group img bg-slate-300 rounded-lg w-full h-32 relative">
+                <img class="h-full w-full object-cover rounded-lg" src="./images/thumb1.jpg" alt="">
+                <div class="z-40 h-10 w-10 border-2 border-slate-600 rounded-full hidden group-hover:flex bg-slate-300 items-center justify-center absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-pointer">
+                  <span class="text-2xl mt-1.5 ml-0.5 text-slate-600 transition"><ion-icon name="musical-note-outline"></ion-icon></span>
+                </div>
+
+               
+              </div>
+              <h1 class="text-xl font-medium leading-6 mt-2 pb-0">John Doe</h1>
+            </div>
+            <!-- Producer Card //-->
+            <!-- Producer Card -->
+            <div class="card bg-bgc py-7 px-8 rounded-xl relative hover:shadow-md hover:shadow-indigo-900 transition">
+              <div class="flex gap-3 absolute -left-4 top-24 -rotate-90">
+                <p>Total: 30</p>
+              </div>
+
+              <div class="group img bg-slate-300 rounded-lg w-full h-32 relative">
+                <img class="h-full w-full object-cover rounded-lg" src="./images/thumb1.jpg" alt="">
+                <div class="z-40 h-10 w-10 border-2 border-slate-600 rounded-full hidden group-hover:flex bg-slate-300 items-center justify-center absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-pointer">
+                  <span class="text-2xl mt-1.5 ml-0.5 text-slate-600 transition"><ion-icon name="musical-note-outline"></ion-icon></span>
+                </div>
+
+               
+              </div>
+              <h1 class="text-xl font-medium leading-6 mt-2 pb-0">John Doe</h1>
+            </div>
+            <!-- Producer Card //-->
+            <!-- Producer Card -->
+            <div class="card bg-bgc py-7 px-8 rounded-xl relative hover:shadow-md hover:shadow-indigo-900 transition">
+              <div class="flex gap-3 absolute -left-4 top-24 -rotate-90">
+                <p>Total: 30</p>
+              </div>
+
+              <div class="group img bg-slate-300 rounded-lg w-full h-32 relative">
+                <img class="h-full w-full object-cover rounded-lg" src="./images/thumb1.jpg" alt="">
+                <div class="z-40 h-10 w-10 border-2 border-slate-600 rounded-full hidden group-hover:flex bg-slate-300 items-center justify-center absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-pointer">
+                  <span class="text-2xl mt-1.5 ml-0.5 text-slate-600 transition"><ion-icon name="musical-note-outline"></ion-icon></span>
+                </div>
+
+               
+              </div>
+              <h1 class="text-xl font-medium leading-6 mt-2 pb-0">John Doe</h1>
+            </div>
+            <!-- Producer Card //-->
+
+          </div>
+        </div>
+        <!-- Featured Producers //-->
+    
+        <!-- Latest Beats -->
+        <div class="bg-black p-4 px-5 my-4 rounded-xl">
+          <h1 class="text-2xl font-semibold py-1">Latest Beats</h1>
+          <div class="felx flex-col my-3 gap-3">
+
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+             <p class="hidden min-[400px]:block">Hip Hop</p>
+              <p class="pt-1 text-lg text-sec"><ion-icon name="download-outline"></ion-icon></p>
+
+              <div class="hidden sm:flex bg-primary items-center px-3 rounded-md">
+                <span class="text-2xl pt-1"><ion-icon name="cart-outline"></ion-icon></span>
+                <span>$30.00</span>
+              </div>
+            </div>
+            <!-- Latest Beats Card //-->
+            
+
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+             <p class="hidden min-[400px]:block">Hip Hop</p>
+              <p class="pt-1 text-lg text-sec"><ion-icon name="download-outline"></ion-icon></p>
+
+              <div class="hidden sm:flex bg-primary items-center px-3 rounded-md">
+                <span class="text-2xl pt-1"><ion-icon name="cart-outline"></ion-icon></span>
+                <span>$30.00</span>
+              </div>
+            </div>
+            <!-- Latest Beats Card //-->
+            
+
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p class="hidden min-[400px]:block">Hip Hop</p>
+              <p class="pt-1 text-lg text-sec"><ion-icon name="download-outline"></ion-icon></p>
+
+              <div class="hidden sm:flex bg-primary items-center px-3 rounded-md">
+                <span class="text-2xl pt-1"><ion-icon name="cart-outline"></ion-icon></span>
+                <span>$30.00</span>
+              </div>
+            </div>
+            <!-- Latest Beats Card //-->
+            
+
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+             <p class="hidden min-[400px]:block">Hip Hop</p>
+              <p class="pt-1 text-lg text-sec"><ion-icon name="download-outline"></ion-icon></p>
+
+              <div class="hidden sm:flex bg-primary items-center px-3 rounded-md">
+                <span class="text-2xl pt-1"><ion-icon name="cart-outline"></ion-icon></span>
+                <span>$30.00</span>
+              </div>
+            </div>
+            <!-- Latest Beats Card //-->
+            
+
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+             <p class="hidden min-[400px]:block">Hip Hop</p>
+              <p class="pt-1 text-lg text-sec"><ion-icon name="download-outline"></ion-icon></p>
+
+              <div class="hidden sm:flex bg-primary items-center px-3 rounded-md">
+                <span class="text-2xl pt-1"><ion-icon name="cart-outline"></ion-icon></span>
+                <span>$30.00</span>
+              </div>
+            </div>
+            <!-- Latest Beats Card //-->
+            
+
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+             <p class="hidden min-[400px]:block">Hip Hop</p>
+              <p class="pt-1 text-lg text-sec"><ion-icon name="download-outline"></ion-icon></p>
+
+              <div class="hidden sm:flex bg-primary items-center px-3 rounded-md">
+                <span class="text-2xl pt-1"><ion-icon name="cart-outline"></ion-icon></span>
+                <span>$30.00</span>
+              </div>
+            </div>
+            <!-- Latest Beats Card //-->
+            
+
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+             <p class="hidden min-[400px]:block">Hip Hop</p>
+              <p class="pt-1 text-lg text-sec"><ion-icon name="download-outline"></ion-icon></p>
+
+              <div class="hidden sm:flex bg-primary items-center px-3 rounded-md">
+                <span class="text-2xl pt-1"><ion-icon name="cart-outline"></ion-icon></span>
+                <span>$30.00</span>
+              </div>
+            </div>
+            <!-- Latest Beats Card //-->
+            
+
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+             <p class="hidden min-[400px]:block">Hip Hop</p>
+              <p class="pt-1 text-lg text-sec"><ion-icon name="download-outline"></ion-icon></p>
+
+              <div class="hidden sm:flex bg-primary items-center px-3 rounded-md">
+                <span class="text-2xl pt-1"><ion-icon name="cart-outline"></ion-icon></span>
+                <span>$30.00</span>
+              </div>
+            </div>
+            <!-- Latest Beats Card //-->
+            
+
+          </div>
+        </div>
+        <!-- Latest Beats //-->
+      </div>
+      <!-- Main Section //-->
+
+      <!-- Sidebar -->
+      <aside class="sidebar xl:block absolute xl:static right-0 top-16 max-xl:w-96 max-xl:bg-bgc z-40 max-xl:p-4">
+
+          <!-- Top Producer -->
+          <div class="producers bg-black rounded-lg p-4 block xl:hidden">
+            <h2 class="text-2xl font-medium mb-2">Top Producers</h2>
+
+            <div class="items">
+              <div class="flex gap-3 items-center my-3">
+                <span class="text-xl font-medium">1</span>
+                <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+                <h1 class="text-lg">Tone Jonez</h1>
+              </div>
+              
+              <div class="flex gap-3 items-center my-3">
+                <span class="text-xl font-medium">2</span>
+                <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+                <h1 class="text-lg">Tone Jonez</h1>
+              </div>
+              <div class="flex gap-3 items-center my-3">
+                <span class="text-xl font-medium">3</span>
+                <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+                <h1 class="text-lg">Tone Jonez</h1>
+              </div>
+              <div class="flex gap-3 items-center my-3">
+                <span class="text-xl font-medium">4</span>
+                <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+                <h1 class="text-lg">Tone Jonez</h1>
+              </div>
+              <div class="flex gap-3 items-center my-3">
+                <span class="text-xl font-medium">5</span>
+                <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+                <h1 class="text-lg">Tone Jonez</h1>
+              </div>
+              <div class="flex gap-3 items-center my-3">
+                <span class="text-xl font-medium">6</span>
+                <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+                <h1 class="text-lg">Tone Jonez</h1>
+              </div>
+              <div class="flex gap-3 items-center my-3">
+                <span class="text-xl font-medium">7</span>
+                <img class="hp rounded-lg" src="https://cdn.airbit.com/avatars/1520580300589ad7f31d05dea77c943f@300x.jpg" alt="">
+                <h1 class="text-lg">Tone Jonez</h1>
+              </div>
+
+            </div>
+          </div>
+          <!-- Top Producer //-->
+        
+         <!-- Latest Beats -->
+         <div class="bg-black p-4 px-5 my-4 rounded-xl">
+          <h1 class="text-2xl font-semibold py-1">Latest Beats</h1>
+          <div class="felx flex-col my-3 gap-3">
+
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Latest Beats Card //-->
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Latest Beats Card //-->
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Latest Beats Card //-->
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Latest Beats Card //-->
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Latest Beats Card //-->
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Latest Beats Card //-->
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Latest Beats Card //-->
+            <!-- Latest Beats Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.png" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Latest Beats Card //-->
+            
+
+          </div>
+        </div>
+        <!-- Latest Beats //-->
+       
+        <!-- Popular Music -->
+         <div class="bg-black p-4 px-5 my-4 rounded-xl">
+          <h1 class="text-2xl font-semibold py-1">Popular Music</h1>
+          <div class="felx flex-col my-3 gap-3">
+
+            <!-- Popular Music Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.jpg" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Popular Music Card //-->
+            <!-- Popular Music Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.jpg" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Popular Music Card //-->
+            <!-- Popular Music Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.jpg" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Popular Music Card //-->
+            <!-- Popular Music Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.jpg" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Popular Music Card //-->
+            <!-- Popular Music Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.jpg" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Popular Music Card //-->
+            <!-- Popular Music Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.jpg" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Popular Music Card //-->
+            <!-- Popular Music Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                 <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.jpg" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Popular Music Card //-->
+            <!-- Popular Music Card -->
+            <div class="group card bg-bgc px-8 rounded-lg flex justify-between items-center py-1 my-3">
+              <div class="flex">
+                <div class="h-11 w-11 relative">
+                  <img class="h-11 w-11 rounded-full" src="./images/profile/profile.jpg" alt="">
+                  <span class="absolute top-2/4 left-2/4 -translate-x-2 -translate-y-2 text-2xl -mt-1 -ml-1 hidden group-hover:block"><ion-icon name="play"></ion-icon></span>
+                </div>
+                <div class="flex flex-col ml-3">
+                  <h1 class="text-lg -mb-1">Tone Jonez</h1>
+                  <p class="text-sm text-slate-600">Matthew May</p>
+                </div>
+              </div>
+              <p>Hip Hop</p>
+            </div>
+            <!-- Popular Music Card //-->
+            
+
+          </div>
+        </div>
+        <!-- Popular Music //-->
+
+        <div class="rounded-lg w-full relative">
+          <img class="w-full rounded-lg" src="./images/profile/profile.png" alt="">
+          <p class="text-4xl text-center px-2 font-bold leading-15 absolute top-2/4 -translate-y-2/4">Be A Part Of The Next Big Thing</p>
+        </div>
+
+      </aside>
+      <!-- Sidebar //-->
+    </div>
+
+    <div class="sig w-full sm:w-9/12 mx-auto rounded-2xl flex flex-col items-center justify-center my-10">
+      <p class="text-3xl text-black font-semibold">Are You Ready?</p>
+      <p class="text-3xl sm:text-4xl lg:text-6xl font-bold text-center my-6 mb-7 leading-15">Be A Part Of The <br/> Next Big Thing</p>
+      <a class="text-xl bg-black p-3 px-6 rounded" href="#">GET STARTED</a>
+    </div>
+    </main>
+
+
+
+    <footer class="container mx-auto mt-24 mb-10 px-0 sm:px-24 lg:px-28">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+        <div class="text-center sm:text-left">
+          <p class="text-xl">YourSite</p>
+        </div>
+        <div class="text-center sm:text-left">
+          <p class="mb-2">Quick Links</p>
+          <ul class="">
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Home</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">About</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Contact</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Terms</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="mt-10 sm:mt-0 text-center sm:text-left">
+          <p class="mb-2">Market</p>
+          <ul class="">
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Beats</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Sell Beats</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Buy Beats</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="mt-10 lg:mt-0 text-center sm:text-left">
+          <p class="mb-2">Social Media</p>
+          <ul class="">
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Facebook</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Instagram</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Twitter/X</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-span-2 flex flex-col justify-end mt-10 lg:mt-0 text-center sm:text-left">
+          <p class="text-xl my-2">Join our newsletter</p>
+
+          <div class="bg-nav rounded-full py-2 px-5 w-72 flex mb-5 mx-auto">
+            <input class="bg-transparent" type="text" placeholder="yourmail@gmail.com">
+
+            <button class="bg-primary px-4 py-1.5 rounded-full">SUBMIT</button>
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
+
+
+  <script src="jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
