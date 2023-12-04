@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css.css">
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./tailwind.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bgc: '#010922',
+                primary: '#8080D7',
+                sec: '#AAD9D9',
+                nav: '#12165A',
+                black: '#161A30'
+              }
+            },
+            screen: {
+              'xs': '400px'
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-bgc text-white">
+
+  <nav class="h-16 bg-indigo-950 fixed right-0 left-0 top-0 z-50">
+    <div class="container h-full flex items-center justify-between">
+      <h1 class="text-2xl">GSB</h1>
+      
+      <ul class="nav-items flex gap-3 items-center absolute md:static right-0 z-40 flex-col md:flex-row bg-bgc md:bg-transparent top-16 w-96 h-60 justify-center">
+        <li>
+          <a class="font-light" href="#">Sell Beats</a>
+        </li>
+        <li>
+          <a class="font-light" href="#">All Beats</a>
+        </li>
+        <li>
+          <a class="font-light" href="#">SignUp</a>
+        </li>
+        <li>
+          <a class="text-2xl" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+        </li>
+        <li>
+          <a class="bg-black p-2 px-5 rounded-full" class="font-light" href="#">Login</a>
+        </li>
+      </ul>
+      <div class="flex gap-4 xl:hidden">
+        <p class="text-3xl md:hidden cursor-pointer" id="nav-menu"><ion-icon name="chevron-down-outline"></ion-icon></p>
+        <p class="text-3xl  cursor-pointer" id="menu"><ion-icon name="menu-outline"></ion-icon></p>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="my-12 block h-1 w-full block md:hidden"></div>
+
+  <!-- <div class="mb-16"></div> -->
+
+    <main class="container">
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative flex min-h-screen justify-between items-center px-5 flex-col md:flex-row lg:px-16 xl:px-24">
+        <div class="flex flex-col flex-1 basis-3/6 my-10 sm:my-16 md:my-0 z-40">
+            <h1 class="text-sec font-semibold text-5xl min-[400px]:text-6xl lg:text-7xl xl:text-[80px] text-center md:text-left">Giver Back Stream</h1>
+            <p class="text-lg font-light xl:w-3/4 my-7 mb-8 capitalize text-slate-300 leading-8 text-center md:text-left">the ultimate destination for music producers to showcase and sell their beats online.</p>
+
+            <div class="flex gap-4 justify-center md:justify-start">
+                <a class="bg-sec text-bgc p-2 lg:p-2.5 px-6 lg:px-6 text-lg rounded-md" href="#">Explore <span class="hidden min-[400px]:inline">Now</span></a>
+                <a class="bg-bgc text-sec p-2 lg:p-2.5 px-6 lg:px-6 text-lg rounded-md ring-1 ring-sec" href="#">Sell <span class="hidden min-[400px]:inline">Music</span></a>
+            </div>
+        </div>
+        <div class="flex-1 basis-3/6 flex justify-center z-40">
+            <img class="w-5/6" src="./images/hero.png" alt="">
+        </div>
+
+        <img class="absolute -left-2/4 -top-1/4 lg:-top-3/4 z-30 w-full" src="./images/shadow2.png" alt="">
+        <img class="absolute -right-1/4 -top-3/4 lg:-top-2/4 z-30 w-full" src="./images/shadow2.png" alt="">
+    </section>
+    <!-- Hero Section //-->
+
+    <!-- Counts -->
+    <section id="counts" class="relative grid grid-cols-2 md:grid-cols-4 justify-between px-10 md:px-24 xl:px-0 xl:w-2/3 mx-auto ">
+        <div class="flex flex-col items-center gap-2 my-3 md:my-0">
+            <p class="text-4xl font-semibold">250+</p>
+            <span class="text-lg text-slate-300">Total Musics</span>
+        </div>
+        <div class="flex flex-col items-center gap-2 my-3 md:my-0">
+            <p class="text-4xl font-semibold">170+</p>
+            <span class="text-lg text-slate-300">Total Beats</span>
+        </div>
+        <div class="flex flex-col items-center gap-2 my-3 md:my-0">
+            <p class="text-4xl font-semibold">150+</p>
+            <span class="text-lg text-slate-300">Total Producers</span>
+        </div>
+        <div class="flex flex-col items-center gap-2 my-3 md:my-0">
+            <p class="text-4xl font-semibold">500+</p>
+            <span class="text-lg text-slate-300">Total Customers</span>
+        </div>
+    </section>
+    <!-- Counts //-->
+
+    
+ <!-- About Section -->
+ <section id="about" class="relative flex min-h-screen justify-between items-center px-5 flex-col md:flex-row-reverse lg:px-16 xl:px-24">
+    <div class="flex flex-col flex-1 basis-3/6 my-10 sm:my-16 md:my-0 z-40">
+        <h1 class="text-sec font-semibold text-4xl min-[400px]:text-5xl lg:text-6xl text-center md:text-left">Who we are?</h1>
+        <p class="text-lg font-light xl:w-3/4 my-7 mb-8 capitalize text-slate-300 leading-8 text-center md:text-left">
+            We are a platform that empowers producers to share their talent and monetize their creations. With us, each beat published for sale comes in two versions: one with a watermark and another without.     
+        </p>
+
+        <div class="flex gap-4 justify-center md:justify-start">
+            <a class="bg-sec text-bgc p-2 lg:p-2.5 px-6 lg:px-6 text-lg rounded-md" href="#"><span class="hidden min-[400px]:inline">Read</span> More</a>
+            <a class="bg-bgc text-sec p-2 lg:p-2.5 px-6 lg:px-6 text-lg rounded-md ring-1 ring-sec" href="#">SignUp</a>
+        </div>
+    </div>
+    <div class="flex-1 basis-3/6 flex justify-center z-40">
+        <img class="w-5/6" src="./images/about.png" alt="">
+    </div>
+
+    <img class="absolute -left-2/4 -top-4/4 z-30" src="./images/shadow2.png" alt="">
+    <img class="absolute -right-2/4 -top-3/4 z-30" src="./images/shadow2.png" alt="">
+</section>
+<!-- About Section //-->
+
+<!-- Sell Section -->
+<section id="sell" class="relative flex min-h-screen justify-between items-center px-5 flex-col md:flex-row lg:px-16 xl:px-24">
+    <div class="flex flex-col flex-1 basis-3/6 my-10 sm:my-16 md:my-0 z-40">
+        <h1 class="text-sec font-semibold text-4xl min-[400px]:text-5xl lg:text-6xl text-center md:text-left">Take Your Music Global: Sell Worldwide!</h1>
+        <p class="text-lg font-light xl:w-3/4 my-7 mb-8 capitalize text-slate-300 leading-8 text-center md:text-left">
+            Ready to Take the Stage on Spotify, Apple Music, TikTok, YouTube, Tidal, Tencent, and More? Put your music where the world is listening! Get your tracks on top platforms and stay in control of your musical journey.     
+        </p>
+
+        <div class="flex gap-4 justify-center md:justify-start">
+            <a class="bg-sec text-bgc p-2 lg:p-2.5 px-6 lg:px-6 text-lg rounded-md" href="#">Sell <span class="hidden min-[400px]:inline">Now</span></a>
+            <a class="bg-bgc text-sec p-2 lg:p-2.5 px-6 lg:px-6 text-lg rounded-md ring-1 ring-sec" href="#">SignUp</a>
+        </div>
+    </div>
+    <div class="flex-1 basis-3/6 flex justify-center z-40">
+        <img class="w-5/6" src="./images/sell.png" alt="">
+    </div>
+
+    <img class="absolute -left-2/4 -top-3/4 z-30" src="./images/shadow2.png" alt="">
+    <img class="absolute -right-1/4 -top-1/4 z-30" src="./images/shadow2.png" alt="">
+</section>
+<!-- Sell Section //-->
+
+<!-- Buy Section -->
+<section id="buy" class="relative flex min-h-screen justify-between items-center px-5 flex-col md:flex-row-reverse lg:px-16 xl:px-24">
+    <div class="flex flex-col flex-1 basis-3/6 my-10 sm:my-16 md:my-0 z-40">
+        <h1 class="text-sec font-semibold text-4xl min-[400px]:text-5xl lg:text-6xl text-center md:text-left">Get Beats from Top Producers in Africa.</h1>
+        <p class="text-lg font-light xl:w-3/4 my-7 mb-8 capitalize text-slate-300 leading-8 text-center md:text-left">
+            If you're searching for the perfect beat for your project, you're in the right spot. Explore beats from the best producers across Africa!
+        </p>
+
+        <div class="flex gap-4 justify-center md:justify-start">
+            <a class="bg-sec text-bgc p-2 lg:p-2.5 px-6 lg:px-6 text-lg rounded-md" href="#">Get <span class="hidden min-[400px]:inline">Now</span></a>
+            <a class="bg-bgc text-sec p-2 lg:p-2.5 px-6 lg:px-6 text-lg rounded-md ring-1 ring-sec" href="#">SignUp</a>
+        </div>
+    </div>
+    <div class="flex-1 basis-3/6 flex justify-center z-40">
+        <img class="w-5/6" src="./images/buy.png" alt="">
+    </div>
+
+    <img class="absolute -left-1/4 -top-1/4 z-30" src="./images/shadow2.png" alt="">
+    <img class="absolute -right-2/4 -top-3/4 z-30" src="./images/shadow2.png" alt="">
+</section>
+<!-- Buy Section //-->
+
+<!-- Contact Section -->
+<section id="contact" class="relative flex min-h-screen justify-between items-center px-5 flex-col md:flex-row lg:px-16 xl:px-24">
+    <div class="flex flex-col flex-1 basis-3/6 my-10 sm:my-16 md:my-0 z-40">
+        <h1 class="text-sec font-semibold text-4xl min-[400px]:text-5xl lg:text-6xl text-center md:text-left">Let's Contact Us!</h1>
+        <p class="text-lg font-light my-7 mb-8 capitalize text-slate-300 leading-8 text-center md:text-left">
+            You can contact us at any time, any moment, whenever you want.
+        </p>
+
+        <form action="" class="flex flex-col">
+            <input class="bg-transparent ring-1 ring-white p-2 px-4 my-2 rounded-md" type="text" name="" id="" placeholder="yourmail@gmail.com">
+            <textarea class="bg-transparent ring-1 ring-white p-2 px-4 my-2 rounded-md" name="" id="" cols="30" rows="7" placeholder="Your message"></textarea>
+            <a class="bg-sec w-24 text-center mt-3 text-bgc p-2 lg:p-2.5 px-6 lg:px-6 text-lg rounded-md" href="#">Send</a>
+        </form>
+
+        <div class="flex gap-4 justify-center md:justify-start">
+        </div>
+    </div>
+    <div class="flex-1 basis-3/6 flex justify-center z-40">
+        <img class="w-5/6" src="./images/contact.png" alt="">
+    </div>
+
+    <img class="absolute -left-2/4 -top-3/4 z-30" src="./images/shadow2.png" alt="">
+    <img class="absolute -right-1/4 -top-1/4 z-30" src="./images/shadow2.png" alt="">
+</section>
+<!-- Contact Section //-->
+
+    <div class="sig w-full sm:w-9/12 mx-auto rounded-2xl flex flex-col items-center justify-center my-10">
+      <p class="text-3xl text-black font-semibold">Are You Ready?</p>
+      <p class="text-3xl sm:text-4xl lg:text-6xl font-bold text-center my-6 mb-7 leading-15">Be A Part Of The <br/> Next Big Thing</p>
+      <a class="text-xl bg-black p-3 px-6 rounded" href="#">GET STARTED</a>
+    </div>
+    </main>
+
+
+
+    <footer class="container mx-auto mt-24 mb-10 px-0 sm:px-24 lg:px-28">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+        <div class="text-center sm:text-left">
+          <p class="text-xl">YourSite</p>
+        </div>
+        <div class="text-center sm:text-left">
+          <p class="mb-2">Quick Links</p>
+          <ul class="">
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Home</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">About</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Contact</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Terms</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="mt-10 sm:mt-0 text-center sm:text-left">
+          <p class="mb-2">Market</p>
+          <ul class="">
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Beats</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Sell Beats</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Buy Beats</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="mt-10 lg:mt-0 text-center sm:text-left">
+          <p class="mb-2">Social Media</p>
+          <ul class="">
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Facebook</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Instagram</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#">Twitter/X</a>
+            </li>
+            <li>
+              <a class="text-slate-400 hover:text-slate-300" href="#"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-span-2 flex flex-col justify-end mt-10 lg:mt-0 text-center sm:text-left">
+          <p class="text-xl my-2">Join our newsletter</p>
+
+          <div class="bg-nav rounded-full py-2 px-5 w-72 flex mb-5 mx-auto">
+            <input class="bg-transparent" type="text" placeholder="yourmail@gmail.com">
+
+            <button class="bg-primary px-4 py-1.5 rounded-full">SUBMIT</button>
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
+
+
+  <script src="jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
