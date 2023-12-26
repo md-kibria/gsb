@@ -1,12 +1,52 @@
-<h3>Please Create an Account with this details</h3>
-<h6>Note: All information is fake.</h6>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paystack</title>
+</head>
+<body>
+    <form id="paymentForm">
+      <h1>This is just for Testing purposes </h1>
+        <h3>Total payment: 10 NGN</h3>
+        <div class="form-submit">
+            <button type="submit" onclick="payWithPaystack()"> Pay Now </button>  
+        </div>  
+    </form>
+      
+      
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script>
+        const paymentForm = document.getElementById('paymentForm');
 
-Country: Nigeria
-Business: TestGBS
-First Name: Mr
-Last Name: Test
-Email: wiweya3722@ubinert.com 
-Phone: (Bangladesh)+880 000000001
-Password: #pay&stack
-(o) Start a business
-Are you a software developer?: (o)Yes, I am
+        paymentForm.addEventListener("submit", payWithPaystack, false);
+
+        function payWithPaystack(e) {
+
+        e.preventDefault();
+
+        let handler = PaystackPop.setup({
+            key: 'pk_test_aa8afcab190ef3f741bc9e75229b221cc053c4af',
+            email: "test@test.com",
+            amount: 10 * 100,
+            // ref: ''+Math.floor((Math.random() * 1000000000) + 1),
+            // label: "Optional string that replaces customer email"
+
+            onClose: function(){
+            alert('Window closed.');
+            },
+
+            callback: function(response){
+            let message = 'Payment complete! Reference: ' + response.reference;
+            alert(message);
+            }
+        });
+
+        handler.openIframe();
+
+        }
+
+
+    </script>
+</body>
+</html>
